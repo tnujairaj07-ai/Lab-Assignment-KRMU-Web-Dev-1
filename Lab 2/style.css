@@ -1,0 +1,250 @@
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Root Color Variables for Consistency */
+:root {
+    --primary-color: #004aad;
+    --secondary-color: #f8f8fa;
+    --accent-color: #FFB700;
+    --heading-color: #1a2236;
+    --border-color: #cccccc;
+}
+
+/* Universal Box Sizing and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: var(--secondary-color);
+    color: #222;
+    line-height: 1.6;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+/* Header and Navigation Styles */
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 24px 0 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    margin-bottom: 8px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+    transition: background .2s, color .2s;
+    font-weight: 500;
+}
+nav a:hover, nav a:focus {
+    background: var(--accent-color);
+    color: var(--heading-color);
+}
+
+/* Main Content and Sections */
+main {
+    max-width: 900px;
+    margin: 38px auto;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    border-radius: 10px;
+    padding: 30px 42px 30px 42px;
+}
+section {
+    margin-bottom: 36px;
+    padding: 16px 0;
+}
+/* Section Headings */
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 14px;
+    letter-spacing: 1.5px;
+}
+
+/* Hero Section */
+.profile-img {
+    display: block;
+    margin: 20px auto 14px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background: #e4ecfa;
+    box-shadow: 0 0 18px rgba(0,0,0,0.09);
+    object-fit: cover;
+    border: 3px solid #dadada;
+}
+section#hero h3 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1.1px;
+}
+
+/* Project List */
+.project-card {
+    background: #fff;
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    margin: 12px auto 16px auto;
+    box-shadow: 0 1.5px 8px rgba(0,0,0,0.05);
+    padding: 18px 0 10px 0;
+    max-width: 385px;
+    text-align: center;
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1.07em;
+    margin: 0 0 7px 0;
+}
+
+.project-card p {
+    color: #333;
+    font-size: 0.98em;
+}
+
+/* Skills Table Styling */
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: #f3f6fc;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0,0,0,0.04);
+}
+#skills th, #skills td {
+    text-align: center;
+    padding: 14px 2px;
+    border: 1px solid var(--border-color);
+}
+#skills th {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+#skills tr:nth-child(even) {
+    background-color: #f7faff;
+}
+
+/* Contact Form Styles */
+.form-wrapper {
+    margin: 0 auto;
+    max-width: 470px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.04);
+    padding: 17px 6px;
+    border: 1.5px solid var(--border-color);
+}
+
+#contact table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#contact td {
+    padding: 11px 7px;
+    border: 1px solid var(--border-color);
+}
+#contact label {
+    margin: 0;
+    font-weight: 500;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 98%;
+    padding: 7px 8px;
+    border-radius: 5px;
+    border: 1.1px solid var(--border-color);
+    font-size: 1em;
+}
+
+/* Styled HR for Section Separators */
+hr {
+    border: none;
+    border-top: 2px solid var(--primary-color);
+    margin: 22px 0;
+    opacity: 0.32;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 22px;
+    right: 24px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 22px;
+    font-size: 1em;
+    box-shadow: 0 2px 9px rgba(0,0,0,0.14);
+    cursor: pointer;
+    transition: background .2s;
+    z-index: 1001;
+}
+#back-to-top:hover {
+    background: var(--accent-color);
+    color: var(--heading-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: var(--primary-color);
+    color: #fff;
+    position: relative;
+    border-top: 3px solid var(--accent-color);
+    border-radius: 0 0 10px 10px;
+    font-size: 1em;
+    letter-spacing: 1.2px;
+    margin-top: 24px;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 650px) {
+    main {
+        padding: 14px 2vw 14px 2vw;
+    }
+    #about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #about img {
+        width: 98vw;
+        max-width: 245px;
+        height: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 7px;
+    }
+}
